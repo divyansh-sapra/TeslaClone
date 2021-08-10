@@ -1,6 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 import CarsList from './components/CarList';
 import Header from './components/Header';
 
@@ -12,7 +12,7 @@ export default function App() {
 
       <CarsList />
 
-      <StatusBar style="auto" />
+      <StatusBar style="auto" hidden = {true} />
     </View>
   );
 }
